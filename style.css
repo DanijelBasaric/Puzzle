@@ -4,12 +4,59 @@
   box-sizing: border-box;
 }
 
+:root {
+  --bckColor: hsl(180, 100%, 50%);
+}
+
 .container {
   width: 80vmin;
-  height: 80vmin;
-  background-color: hsl(180, 100%, 50%);
   margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+header nav.container {
+  /* border: 1px solid red; */
+  /* width: 80vmin; */
+  padding: 20px;
+  justify-content: space-between;
+}
+
+header nav.container ul {
+  display: flex;
+}
+
+header nav.container ul li {
+  padding: 0px 5px;
+  list-style: none;
+}
+
+header nav.container ul li:hover {
+  color: red;
+  cursor: pointer;
+}
+
+main div.container {
+  height: 80vmin;
+  background-color: var(--bckColor);
+  flex-wrap: wrap;
+}
+
+main div.container .cardItem {
+  border: 1px solid black;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  gap: 1px;
+}
+
+main div.container label {
+  font-size: 1.5rem;
+}
+main div.container input {
+  width: 15%;
+  font-size: 2rem;
 }

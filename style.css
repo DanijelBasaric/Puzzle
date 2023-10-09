@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 80vmin;
+  height: 80vmin;
+  background-color: hsl(180, 100%, 50%);
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
